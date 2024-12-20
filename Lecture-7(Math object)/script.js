@@ -56,7 +56,7 @@ let y = Math.ceil(78.8);
 // window.alert(y);
 
 // Math.sign()
-// Math.sign(x) returns if x is negative, null or positive:
+// Math.sign(x) returns if x is negative, null or positive Number:
 
 Math.sign(-4);
 Math.sign(0);
