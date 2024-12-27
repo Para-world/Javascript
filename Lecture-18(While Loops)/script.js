@@ -24,7 +24,7 @@ while (k >= 1) {
 // Example 4: Sum of numbers from 1 to 5
 let sum = 0;
 let l = 1;
-while (l <= 5) {
+while (l <= 15) {
     sum += l;
     l++;
 }
