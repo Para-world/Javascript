@@ -23,7 +23,8 @@
 
 
 
-
+//ignor this part
+// this part only for fun right now we will learn this in future
         const audio = document.getElementById('background-audio');
 const playPauseBtn = document.getElementById('play-pause-btn');
 const audioSlider = document.getElementById('audio-slider');
