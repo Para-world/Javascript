@@ -7,7 +7,7 @@
 
 const person = {
     firstName: 'John',
-    lastName: 'Doe',
+    lastName: 'sharma',
     age: 30,
     isEmployed: true,
     sayhello: function(){console.log(`hi! i am ${firstName} ${lastName}`);},
@@ -38,3 +38,8 @@ console.log(person2.isEmployed);
 
 person.eat();
 person2.eat();
+
+console.log(person)
+console.log(person2)
+console.log(person.firstName)
+console.log(person2.firstName)
