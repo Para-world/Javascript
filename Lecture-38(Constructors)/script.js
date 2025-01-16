@@ -18,7 +18,7 @@ const car2 = new Car("Toyota", "Camry", 2017, "Blue");
 console.log(car2);
 
 const car3 = new Car("Honda", "Civic", 2019, "Silver");
-console.log(car3.make);
+console.log(car3.year);
 console.log(car3.model);
 console.log(car3.year);
 console.log(car3.color);
