@@ -1,0 +1,78 @@
+Dom All Selector:
+
+on-console
+document.getElementById('title').getAttribute('id')
+document.getElementById('title').getAttribute('class')
+document.getElementById('title').setAttribute('class', 'test')
+document.getElementById('title').setAttribute('class', 'test heading')
+document.getElementById('title')
+title.style.backgorundColor = 'yellow'
+title.style.padding = "18px"
+title.innertext (it shows only visible text)
+title.textcontent (it shows compelte text content)
+title.innerhtml (it alsow shows html written inside)
+
+
+
+
+
+Here's the completed and refined version of your notes on DOM All Selectors with explanations and corrections:
+
+DOM All Selector:
+Using document.getElementById
+Get the value of an attribute:
+
+
+document.getElementById('title').getAttribute('id'); // Returns the 'id' attribute value of the element with id="title".
+document.getElementById('title').getAttribute('class'); // Returns the 'class' attribute value.
+Set or update the value of an attribute:
+
+
+document.getElementById('title').setAttribute('class', 'test'); 
+// Sets the 'class' attribute to 'test'.
+
+document.getElementById('title').setAttribute('class', 'test heading');
+// Updates the 'class' attribute to include multiple class names: 'test heading'.
+Access the entire element:
+
+
+document.getElementById('title'); 
+// Returns the element with id="title".
+Modify Style Properties
+Change background color:
+
+
+title.style.backgroundColor = 'yellow';
+// Changes the background color of the element to yellow.
+Change padding:
+
+
+title.style.padding = '18px'; 
+// Adds padding of 18px to the element.
+Access Text and HTML Content
+Access visible text only (innerText):
+
+
+title.innerText;
+// Retrieves only the visible text of the element, ignoring hidden text or CSS-modified content.
+Access complete text content (textContent):
+
+
+title.textContent;
+// Retrieves all the text content, including hidden text, within the element.
+Access or modify HTML content (innerHTML):
+
+
+title.innerHTML;
+// Retrieves the inner HTML of the element, including any nested tags.
+Important Notes:
+getElementById: Returns a single element because IDs are unique in the DOM.
+CSS Styles: Use style.propertyName to directly manipulate styles in JavaScript.
+Content Access:
+innerText considers CSS visibility (shows only visible text).
+textContent shows the full text regardless of visibility.
+innerHTML includes HTML tags inside the element.
+
+
+
+
