@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 min-h-screen flex items-center justify-center p-4">
+  <div class="bg-white rounded-3xl shadow-2xl w-full max-w-2xl p-8 space-y-6 transition-all duration-500 relative">
+    <h1 class="text-3xl font-extrabold text-center text-indigo-700">🎯 Smart Quiz App</h1>
+
+    <!-- Timer -->
+    <div id="timer" class="text-right font-semibold text-red-600 hidden">Time Left: <span id="time-left">60</span> sec</div>
+
+    <!-- Start screen -->
+    <div id="start-screen" class="space-y-4">
+      <label class="block text-lg text-gray-700 font-medium">Enter your name:</label>
+      <input type="text" id="username" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-400 outline-none" placeholder="e.g. Alex" />
+      <button onclick="startQuiz()" class="w-full bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition">
+        Start Quiz
+      </button>
+    </div>
+
+    <!-- Quiz Form -->
+    <form id="quiz-form" class="hidden space-y-6">
+      <div id="questions-wrapper"></div>
+
+      <button type="button" onclick="submitQuiz()" class="w-full bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition">
+        Submit Answers
+      </button>
+    </form>
+
+    <!-- Result -->
+    <div id="result" class="hidden text-center space-y-2">
+      <h2 class="text-2xl font-bold text-indigo-700 mb-2">🎉 Result</h2>
+      <p id="score-text" class="text-xl font-medium text-gray-800"></p>
+      <p id="feedback-text" class="text-gray-600"></p>
+      <button onclick="resetQuiz()" class="mt-4 px-6 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700">Restart Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
